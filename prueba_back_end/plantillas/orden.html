@@ -1,0 +1,8 @@
+<h4>Añadir orden</h4>
+<form method="POST">
+    
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Asignar Orden">
+
+</form>

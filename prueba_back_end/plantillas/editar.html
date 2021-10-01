@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <header>
+        <ul>
+            <li><a href="{ % url 'editar' % }">Editar</a></li>
+            <li><a href="{% url 'crear' %}">Crear</a></li>
+            <li><a href="{% url 'listar' %}">Listar</a></li>
+            <li><a href="{ % url 'eliminar' % }">Eliminar</a></li>
+        </ul>
+    </header>
+    <body><h3>Actualizar Registro</h3>
+       
+           
+            <form method="POST" action="actualizar/{{id}}">
+                {% csrf_token %}
+                <laber>id: </laber><input type="text" value = {{id}} name ="id" id="id" disabled >
+                {{cliente.as_p}}
+                <input type="submit" value="actualizar" id="actualizar" >
+            </form>
+         
+            
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <header>
+        <ul>
+            <li><a href="{% url 'editar' %}">Editar</a></li>
+            <li><a href="{% url 'crear' %}">Crear</a></li>
+            <li><a href="{% url 'listar' %}">Listar</a></li>
+            <li><a href="{ % url 'eliminar' % }">Eliminar</a></li>
+        </ul>
+    </header>
+    <body>
+        <form method="POST" >
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Guardar">
+        </form> 
+        
+        
+    </body>
+</html>
