@@ -7,7 +7,7 @@
 
 ### muestra los registros y/o resultado de cada servicio en formato json
 ### se puede guardar un cliente, modificarlo mediante un sencillo formulario en html
-### lista los clientes direccionando al link correspondendiente, y para eliminar un registro basta con colocar el id como para variable en la url
+### lista los clientes el vinvulo local correspondendiente, y para eliminar un registro basta con colocar el id como parametro en la url
 
 ### al igual que modifica el estado de una orden a travez del link colocando el numero de la orden seguida del estado al que desea cambiar
 
